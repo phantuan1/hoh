@@ -1,0 +1,57 @@
+body {
+	background-color:  rgb(255,255,240);
+	margin-left: 20%;
+
+}
+ textarea{
+scrollbar-3dlight-color: #C0C0C0;
+scrollbar-shadow-color: silver;
+scrollbar-arrow-color: black;
+scrollbar-face-color: gray;
+
+ }
+
+
+.imgHelp {
+	cursor: help;
+	margin-left: 60%;
+}
+
+#main {
+	width: 400px;
+	background-color:  #DDFFEE;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: right;
+	height: 350px;
+}
+
+#help{
+	position: relative;
+	width: 500px;
+	height: 420px;
+	margin-top: 10px;
+	background-color: #cfc;
+	border-left: : 10px;
+	border-right: : 10px;
+	border-color: #E4E7E7;
+	border-width: 2px;
+	border-style: solid;
+	color: #303030;
+}
+
+.close{
+	float: right;
+	color: blue;
+	cursor: hand;
+}
+
+#main label {
+	margin-bottom: 20px;
+
+	
+}
+
+#main input {
+	margin-bottom: 20px;
+    
