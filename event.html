@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Giai A B</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.head{
+			width: 100%;
+			background-color: blue;
+			color: white;
+		}
+
+		.row{
+			background-color: green;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+<div>
+	<div class="head">
+		<h1>Giải Phương Trình Bậc 1</h1>
+	</div>
+
+	<div>
+		<button onclick="click1()" class="row">Nhập Gía Trị A</button>
+		<button onclick="click2()" class="row">Nhập Gía Trị B</button>
+		<button onclick="click3()" class="row">In ra kết quả</button>
+	</div>
+	<script type="text/javascript">
+		var a,b;
+		function click1(){
+			a = prompt("Nhập Gía Trị A")
+		}
+		function click2(){
+			b = prompt("Nhập Gía Trị B")
+		}
+
+	function click3(){
+		num= parseInt(a) +parseInt(b);
+		alert("Tổng của a và b ="+num);
+	}
+	</script>
+</div>
+</body>
+</html>
