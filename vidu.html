@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QUan Ly Sinh Vien</title>
+</head>
+<body>
+	<table border="1" cellspacing="3" cellpadding="3">
+	<thead>
+		<tr>
+			<th colspan="6">Quan li Sinh VIen</th>
+		</tr>
+		<tr>
+			<td>STT</td>
+			<td>Ten</td>
+			<td>Tuoi</td>
+			<td>Dia chi</td>
+			<td>Email</td>
+			<td>SDT</td>
+		</tr>
+	</thead>
+<tbody>
+	<script type="text/javascript">
+		var studentlish = []
+
+		for(var i=0; i<20; i++){
+			std = {
+				'fullname': 'A' + i,
+				'age': 'B' + i,
+				'address': 'HN' + i,
+				'email': 'a' + i + '@gamil.com',
+				'phone_number': '123' + i
+			};
+			studentlish.push(std)
+		}
+
+		for(var i=0; i<studentlish.length; i++){
+			document.writeln(`<tr>
+						<td>${i + 1}</td>
+						<td>${studentlist[i].fullname}</td>
+						<td>${studentlist[i].age}</td>
+						<td>${studentlist[i].address}</td>
+						<td>${studentlist[i].email}</td>
+						<td>${studentlist[i].phone_number}</td>
+					</tr>`)
+		}
+	</script>
+	</tbody>
+	</table>
+</body>
+</html>

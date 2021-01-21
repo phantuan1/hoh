@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tạo máy tính căn bản cộng trừ nhân chia bằng Javascript </title>
+	<meta charset="utf-8">
+</head>
+<body>
+<h1 style="text-align: center; font-weight: bold;">Tạo máy tính căn bản cộng trừ nhân chia bằng Javascript </h1><br>
+<button onclick="A()">Nhập A và B</button>
+<button onclick="Tong()">Tính tổng</button>
+<button onclick="Hieu()">Tính hiệu</button>
+<button onclick="Tich()">Tính tích</button>
+<button onclick="Thuong()"> Tính thương</button>
+<script type="text/javascript">
+	var a,b;
+	sum=0;
+	function A() {
+		a = prompt("Nhập giá trị a");
+		b = prompt("Nhập giá trị b");
+	}
+
+	function Tong() {
+		sum=parseInt(a) + parseInt(b);
+		alert("ket qua la " +sum);
+		return sum;
+	} 
+
+	function Hieu(){
+		Hieu=parseInt(a) - parseInt(b);
+		alert("ket qua la " +Hieu);
+		return Hieu;
+	}
+
+	function Tich(){
+		Tich=parseInt(a) * parseInt(b);
+		alert("ket qua la " +Tich);
+		return Tich;
+	}
+
+	function Thuong(){
+		Thuong=parseInt(a) / parseInt(b);
+		alert("ket qua la " +Thuong);
+		return Thuong;
+	}
+
+</script>
+</body>
+</html>
