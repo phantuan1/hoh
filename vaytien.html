@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loan Application From</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.head{
+			background-color: pink;
+			color: black;
+			border: solid 2px red;
+			width: 100%;
+			text-align: left;
+		}
+		fieldset{
+			background-color: white;
+			border: solid 2px red;
+			color: #246b87;
+			
+		}
+		.heading{
+			background-color: pink;
+			color: black;
+			display: flex;
+			margin-bottom: 1px;
+
+		}
+		.heading label{
+			width: 200px;
+			height: 20px;
+			float: left;
+			padding-top: 10px;
+			padding-left: 10px;
+
+		}
+		.heading input{
+			padding-bottom: 3px;
+		}
+		button{
+			margin-left: 20px;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h3 class="head">Loan Application From</h3>
+
+	<fieldset>
+		<legend>Applicant's Personal Information</legend>
+		<div style="background-color:  pink">
+			<div class="heading">
+			<label>Full Name:</label>
+			<input required="true" type="text" name="full_name" size="50" maxlength="50"><br>
+		</div>
+		<div class="heading">
+			<label>Data of Birth(MM/dd/yyyy):</label>
+			<input required="true" type="date" name="birthday"><br>
+		</div>
+		<div class="heading">
+			<label>Phone Number:</label>
+			<input required="true" type="tel" autofocus="true" name="Phone" minlength="10"><br>
+		</div>
+		<div class="heading">
+			<label>Address:</label>
+			<input required="true" type="text" name="Address" ><br>
+		</div>
+		<div class="heading">
+			<label>ZIP Code:</label>
+			<input required="true" type="zip" name="zip" placeholder="xxx-xxxx-xxx" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" required="-"><br>
+		</div>
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Applicant's Employment Information</legend>
+		<div style="background-color:  pink">
+		<div class="heading">
+			<label>Current Employer:</label>
+			<input required="true" type="text" name="Current" size="50">
+		</div>
+		<div class="heading">
+			<label>Employer Address:</label>
+			<input required="true" type="text" name="Address">
+		</div>
+		<div class="heading">
+			<label>Data of Joining(MM/dd/yyyy):</label>
+			<input required="true" type="date" name="birthday">
+		</div>
+		<div class="heading">
+			<label>Phone Number:</label>
+			<input required="true" type="tel" autofocus="true" name="Phone" minlength="10">
+		</div>
+		<div class="heading">
+			<label>E-mail ID:</label>
+			<input required="true" type="email" name="E-mail" size="50" maxlength="50"><br>
+		</div>
+		<div class="heading">
+			<label>Fax:</label>
+			<input required="true" type="text" name="Fax" size="50" maxlength="50" pattern="[0-9]{3}-[0-9}{7}"><br>
+		</div>
+		<div class="heading">
+			<label>Designation:</label>
+			<input required="true" type="text" name="Designation" size="50" maxlength="50"><br>
+		</div>
+		<div class="heading">
+			<label>Annual Income(S):</label>
+			<input required="true" type="number" name="age" size="50" maxlength="50"><br>
+	    </div>
+	</div>
+	</fieldset>	
+	<fieldset>
+		<legend>Loan Information</legend>
+		<div style="background-color:  pink">	
+		<div class="heading">
+			<label>Loan Type:</label>
+			<select>
+				<option value=" Select"> Select</option>
+				<option value="Personal Loan">Personal Loan</option>
+				<option value="Home Loan">Home Loan</option>
+				<option value="Vehicle Loan">Vehicle Loan</option>
+				<option value="Business Loan">Business Loan</option>
+				<option value="Education Loan">Education Loan</option>
+			</select>
+		</div>
+		<div class="heading">
+			<label>Principal($):</label>
+			<input required="true" type="number" name="age" size="50"  value="$"><br>
+		</div>
+		<div class="heading">
+			<label>Period (Months):</label>
+			<input required="true" type="number" name="age" size="50"  value="$"><br>
+		</div>
+		<div class="heading">
+			<label>Interest(%):</label>
+			<input type="" name="Interest">
+		</div>
+		<div class="heading">
+			<button type="submit">Submit</button>
+			<button type="Reset">Reset</button>
+		</div>
+	</div>
+	</fieldset>
+</body>
+</html>

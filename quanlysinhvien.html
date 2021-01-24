@@ -1,50 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Quản lý sinh viên</title>
+	<title>Quan ly sinh vien</title>
 	<meta charset="utf-8">
 	<style type="text/css">
-		.head{
-			border: solid blue 2px;
-			width: 70%;
-			margin: 0px auto;
-			height: 700px;
-		}
-
-		.dau{
-			background-color: blue;
-			color: white;
-			border-bottom: blue;
-			padding: 10px;
-			
-		}
-
 		.main{
-			border: solid gray 2px;
-			width: 95%;
-			height: 650px;
-			margin: 0px auto;
-			margin-top: 10px;	
+			border: 1px solid blue;
+			border-radius: 5px;
+			width: 100%;
+			height: 800px;
+			display: block;
 		}
-
-		.stt{
+		.top{
+			background-color: blue;
+			height: 30px
 			padding-left: 5px;
-			width: 20%;
-			border-right: solid gray 1px;
-			border-bottom: solid gray 1px;
+			padding-top: 5px;
+			color: white;
 		}
 	</style>
 </head>
 <body>
-	<div class="head">
-		<div class="dau">Management Products</div>
-		<div class="main">
-		 <tr>
-		 <strong class="stt" ">STT</strong>
-		 <strong>Tên</strong>
-		 </tr>
-		</div>
-	</div>
+<div class="main">
+	<div class="top">Management Products</div>
+<table border="1" cellspacing="3" cellpadding="3" >
+	<thead>
+		<tr>
+			<th>STT</th>
+			<th>Ten</th>
+			<th>Tuoi</th>
+			<th>Dia Chi</th>
+			<th>Email</th>
+		</tr>
+	</thead>
+	<tbody>
+	<script type="text/javascript">
+		var studentList =[]
+		for(var i=0;i<20;i++){
+			std={
+				'fullname': 'A'+i,
+				'age':i,
+				'address':'hn'+i,
+				'email': 'a@gmail.com'+i,
+			};
+			studentList.push(std)
+		}
+		for (var i=0; i< studentList.length; i++){
+			document.writeln(`<tr>
+				<td>${i+1}</td>
+				<td>${studentList[i].fullname}</td>
+				<td>${studentList[i].age}</td>
+				<td>${studentList[i].address}</td>
+				<td>${studentList[i].email}</td>
+				</tr>`)
+		}
+	</script>
 
+	</tbody>
+</table>
+	
+</div>
 </body>
 </html>
