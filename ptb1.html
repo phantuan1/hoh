@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Giai phuong trinh bậc 1</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="card" style="margin-top: 10px;">
+    	<div class="card-header bg-success text-light">
+    		Giari phương trình bậc 1
+    	</div>
+    	<div class="card-body" style="float: ">
+    		<button class="bg-success text-light" style="border: none;" id="A">Nhập giá trị A</button>
+    		<button class="bg-success text-light" style="border: none;" id="B">Nhập giá trị B</button>
+    		<button class="bg-success text-light" style="border: none;" id="ketqua"> In kết quả</button>
+    	</div>
+    </div>	
+</div>
+<script type="text/javascript">
+	var x
+	var a
+	var b
+	$(function(){
+		$('#A').click(function(){
+			giatriA()
+		})
+		$('#B').click(function(){
+			giatriB()
+		})
+		$('#ketqua').click(function(){
+			ketqua()
+		})
+	})
+
+	function giatriA() {
+		 a = prompt("Nhập giá trị A")
+	}
+
+	function giatriB() {
+		 b =prompt("Nhập giá trị B")
+	}
+
+	function ketqua() {
+			if (a == 0) {
+				if (b == 0) {
+					alert('Phương trình vô số nghiệm')
+				} else {
+					alert('Phương trình vô nghiệm')
+				}
+			} else {
+				x = -b/a
+				alert('Phương trình có nghiệm x =' +x)
+			}
+
+	}
+</script>
+</body>
+</html>
